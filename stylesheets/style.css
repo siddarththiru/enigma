@@ -1,0 +1,559 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Varela Round', sans-serif;
+  background-repeat:no-repeat;
+  background-image: url("/images/bg-image-shiny12.svg");
+  background-size:cover;
+  background-position: center;
+  background-color: #06283D;
+}
+
+.home_image{
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+    opacity: 0.7;
+}
+
+.div1 h3{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  position: absolute;
+}
+
+.home-container{
+  position: relative;
+  display: block;
+}
+
+.home-header{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color:#C0EDA6;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home_image{
+    opacity: 0.4;
+    transition: 3s;
+  }
+}
+
+#line1{
+  color:#C0EDA6;
+  font-size: 60px;
+}
+
+.blog-preview{  
+  background-color: #06283D90;
+  border-radius: 20px;
+}
+
+.blog-preview:hover{
+  cursor: pointer;
+  scale: 1.02;
+  transition: 0.2s;
+}
+
+h1{
+  font-family: 'Varela Round', sans-serif;
+  color:#FFFFFF;
+  font-weight: 100;
+}
+
+.following-blog-previews{
+    margin-top: 30px;
+}
+
+.blog-preview img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+p:hover {
+  background-color: #dcd5d5;
+  color:black;
+}
+
+
+/*Navbar- done by Siddarth*/
+header{
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #06283D90;
+  padding-right: 40px;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#brand a {
+  margin-left: 40px;
+  color: red;
+  font-size: 30px;;
+}
+
+header ul {
+  font-size: 15px;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*Viable Input from Aaron Smith about colors*/
+header ul a {
+  color: #D6E4E5;
+  font-family: 'Varela Round', sans-serif;
+}
+
+header ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  border: 1px solid #D6E4E5;
+  border-radius: 10px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+header ul a {
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 1s !important;
+}
+
+header ul li:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+header ul li a:hover {
+  color: #39A2DB;
+}
+
+.contact-color{
+  color:#C0EDA6;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 250px;
+  /*height: calc(100vh - 50px)*/
+  width: 100%;
+  background-color: #06283D;
+  padding-top: 10px;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  header ul a{
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: 1s;
+  }
+
+
+
+}
+/*Navbar ends*/
+
+@media only screen and (max-width: 576px){
+
+  body{
+    background-size:auto;
+  }
+
+  .resource-pane p{
+    font-size: 12px;
+  }
+
+  .resource-pane:hover{
+    transform: scale(1);
+  }
+
+  .home-header{
+    font-size: 40px;;
+  }
+
+}
+
+.blog-preview h3{
+  color:#C0EDA6;
+  font-weight: bold;
+}
+
+p{
+  color:#E4F9F5;
+}
+
+/*Contact Page*/
+.contact-box{
+  background-color:#06283D90;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contact-form{
+  margin:0px 40px;
+}
+
+.contact-form input, select, textarea{
+  border-radius: 20px;
+  padding: 5px;
+  color:#06283D;
+  background-color: #30E3CA;
+  border: none;
+}
+
+::placeholder{
+  color:#06283D70;
+}
+
+.contact-form label{
+  font-size: 20px;
+}
+
+#submit-button{
+  background-color:#39A2DB ;
+  color:#D6E4E5;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#submit-button:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#privacy-check{
+  color:white;
+  font-size: small;
+  display: inline;
+}
+
+.contact-form span{
+  display: block;
+}
+
+.privacy-label{
+  display: inline;
+}
+
+.submit-button{
+  padding: 10px 10px;
+}
+
+.incomplete-field{
+  color:red;
+}
+
+#privacy{
+  display: inline;
+}
+/*Contact Page Ends*/
+
+/*Game*/
+.dice1{
+	text-align:center;
+	display:inline-block;
+}
+
+.dice1:hover{
+  cursor: pointer;
+}
+
+.dice2{
+	text-align:center;
+	display:inline-block;
+}
+
+.game-instruction{
+  text-decoration: underline;
+}
+
+
+/*Game ends*/
+
+
+.onpage{
+  color:#39A2DB;
+}
+
+/*Resource Gallery Page*/
+.resource-pane{
+  position: relative;
+  background-color: #06283D90;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.img_overlay{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1.0);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resource-pane img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.description{
+  font-size: 15px;
+  margin-top: 0.25em;
+}
+
+.resource-linkers a{
+  display: inline !important;
+}
+
+.resource-pane{
+  position: relative;
+}
+
+.resource-pane:hover{
+  cursor:pointer;
+}
+
+.underlay{
+  position: absolute;
+  background-color: #06283D;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.overlay{
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+h3{
+  color:#C0EDA6;
+  font-weight: bold;
+}
+
+.img_overlay p{
+  margin: 10px;
+}
+
+.img_overlay a {
+  color:#D6E4E5;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid #E4F9F5;
+  border-radius: 5px;
+}
+
+.img_overlay a:hover{
+  color:#39A2DB;
+  transform: scale(1.1);
+  transition: 0.2s;
+} 
+/*Resource Gallery Page Ends*/
+
+@media only screen and (max-width: 800px) {
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading-1{
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px){
+  .resource-pane:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+}
+img{
+  width: 100%;
+}
+.col-sm-8 div{
+	padding: 20px 20px;
+}
+
+.footer-container{
+  margin-top: 150px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefee;
+  display: flex;
+}
+.footer div{
+   text-align: center;
+}
+.heading-2{
+   flex-grow: 2;
+   text-align: center;
+   margin: 25px;   
+}
+.heading-1{
+  margin: 25px;
+}
+.heading-3{
+  margin: 25px;
+}
+.footer div h3 {
+   font-weight: 300;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+.heading-1 a {
+   display: block;
+   text-decoration: none;
+   color: #efefee;
+   margin-bottom: 10px;
+}
+.subscribe-form input{
+   width: 400px;
+   height: 45px;
+   border-radius: 4px;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   outline: none;
+   border: none;
+   color: #333333;
+}
+.subscribe-form button{
+   background: transparent;
+   border: 2px solid #fff;
+   color: #fff;
+   border-radius: 30px;
+   padding: 10px 30px;
+   font-size: 15px;
+   cursor: pointer;
+}
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons i{
+   font-size: 22px;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.blog-container{
+  background-color: #2B3A5580;
+  border-radius: 20px;
+}
+
+.blog-container img{
+  border-radius: 10px;
+}
+
+.blog-container {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.blog-preview .row {
+  padding: 20px;
+}

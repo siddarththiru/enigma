@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Enigma</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/images/logo.svg" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="stylesheets/style.css">
+
+		<script src="/javascript/javascript.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito+Sans:wght@900&family=Varela+Round&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+		<header>
+			<div id="brand"><a href="index.html">Enigma</a></div>
+			<nav>
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blogs.html" class="onpage">Blogs</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="game.html">Game</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+			  </ul>
+			</nav>
+			<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+			  	<div class="bar1"></div>
+			  	<div class="bar2"></div>
+			  	<div class="bar3"></div>
+			  	<ul class="mobile-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blogs.html" class="onpage">Blogs</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="game.html">Game</a></li>
+					<li><a href="contacts.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<br><br>
+		
+        <div class="container-fluid">
+			<div class="row">
+                <div class="col-md-2"></div>
+				<div class="col-md-8">
+                    <h1>BLOGS</h1>
+					
+					<div class="blog-preview"> 
+						<a href="blog2.html">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-6">
+										<img src="images/blog1.jpg" class="blog-preview-img">
+									</div>
+									
+									<div class="col-lg-6">
+										<h3>5 ways to study online effectively</h3>
+										<p>Staring at a screen all day while taking online classes is not easy. Neither is doing classwork surrounded by the familiar and distracting comforts of home. You may want to run to the kitchen or lie down on your bed, but remember, you’re at school! If you find yourself having trouble focusing while conducting online learning, try...</p>
+									</div>
+								</div>
+							</div>
+						</a>	
+					</div>
+					<br>
+					<div class="blog-preview"> 
+						<a href="blog1.html">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-6 gx-5">
+										<img src="images/blog2.jpg" class="blog-preview-img">
+									</div>
+									<div class="col-lg-6 gx-5">
+										<h3>5 Mental Health Tips for Online Students</h3>
+										<p>Staring at a screen all day while taking online classes is not easy. Neither is doing classwork surrounded by the familiar and distracting comforts of home. You may want to run to the kitchen or lie down on your bed, but remember, you’re at school! If you find yourself having trouble focusing while conducting online learning, try...</p>
+									</div>
+								</div>
+							</div>
+						</a>	
+					</div>
+                </div>
+				
+                <div class="col-md-2"></div>
+			</div>
+		</div>
+
+		<!-- footer done by David https://www.youtube.com/watch?v=lLdzlLL33G8&t=820s-->
+		<div class="footer-container container-fluid">
+			<div class="heading-1">
+				<h3>Useful Links</h3>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Contacts</a>
+				<a href="#">Blogs</a>
+				<a href="#">Sponserships</a>
+				<a href="#">Sitemap</a>
+			</div>
+			<div class="heading-2">
+				<h3>Blogs For You</h3>
+				<div class="subscribe-form">
+					<input type="email" placeholder= "Enter Your Email Address" id="footer-email">
+					<br>
+					<button onclick="footerSubscribe()">Subscribe</button>
+				</div>
+			</div>
+		
+			<div class="heading-3">
+				<h3>CONTACT</h3>
+				<p>321,NCI Road,IRE<br>Ireland, Dublin, IN</p>
+				<div class="social-icons">
+					<i class="fa-brands fa-youtube"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-facebook"></i>
+				</div>
+			</div>  
+		</div>
+    </body>
+</html>
