@@ -1,7 +1,8 @@
+//Siddarth
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
-
+//Siddarth
 function footerSubscribe(){
 	var x = document.getElementById("footer-email");
 	if (x.value != ""){
@@ -11,7 +12,7 @@ function footerSubscribe(){
 		x.style.border = "3px solid red";
 	}
 }
-
+//David
 function validator(){
     var check = true;
 
@@ -55,11 +56,11 @@ function validator(){
     return check;
 	
 }
-
+//Siddarth
 function revert_privacy_color() {
     document.getElementById("privacy-check").style.color = "white";
 }
-
+//Harsha
 function dice(){
 	var x= Math.floor(Math.random()*6)+1;
 	if(x==1){
@@ -114,7 +115,7 @@ function dice(){
 		document.getElementById("result").innerHTML ="Oops! There seems to be an error, <a href=\"/contacts.html\">please report it to us here.</a>"
 	}
 }
-
+//Siddarth
 var counter1 = 0;
 function overlayer1(){
 	var overlay = document.getElementById("pane1");
@@ -130,7 +131,7 @@ function overlayer1(){
 	}
 	counter1+=1;
 }
-
+//Siddarth
 var counter2 = 0;
 function overlayer2(){
 	var overlay = document.getElementById("pane2");
@@ -146,7 +147,7 @@ function overlayer2(){
 	}
 	counter2+=1;
 }
-
+//Siddarth
 var counter3 = 0;
 function overlayer3(){
 	var overlay = document.getElementById("pane3");
@@ -162,7 +163,7 @@ function overlayer3(){
 	}
 	counter3+=1;
 }
-
+//Siddarth
 var counter4 = 0;
 function overlayer4(){
 	var overlay = document.getElementById("pane4");
@@ -178,7 +179,7 @@ function overlayer4(){
 	}
 	counter4+=1;
 }
-
+//Siddarth
 var counter5 = 0;
 function overlayer5(){
 	var overlay = document.getElementById("pane5");
@@ -194,7 +195,7 @@ function overlayer5(){
 	}
 	counter5+=1;
 }
-
+//Siddarth
 var counter6 = 0;
 function overlayer6(){
 	var overlay = document.getElementById("pane6");
@@ -210,8 +211,7 @@ function overlayer6(){
 	}
 	counter6+=1;
 }
-
-
+//Siddarth
 var counter7 = 0;
 function overlayer7(){
 	var overlay = document.getElementById("pane7");
@@ -227,7 +227,7 @@ function overlayer7(){
 	}
 	counter7+=1;
 }
-
+//Siddarth
 var counter8 = 0;
 function overlayer8(){
 	var overlay = document.getElementById("pane8");
